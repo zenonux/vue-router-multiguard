@@ -1,10 +1,10 @@
 {
-  "name": "vue-router-multiguard",
-  "version": "1.0.3",
+  "name": "@urcloud/vue-router-multiguard",
+  "version": "1.0.4",
   "description": "Provides the ability to specify multiple guards for vue routes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atanas-angelov-dev/vue-router-multiguard.git"
+    "url": "https://github.com/zenonux/vue-router-multiguard.git"
   },
   "main": "dist/vue-router-multiguard.min.js",
   "scripts": {
@@ -17,7 +17,6 @@
     "guard",
     "multiple-guard"
   ],
-  "author": "Atanas Angelov <atanas.angelov.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
