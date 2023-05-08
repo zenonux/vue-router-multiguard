@@ -20,14 +20,14 @@ Provides the ability to specify multiple guards for vue router routes.
 import VueRouter from 'vue-router';
 import multiguard from 'vue-router-multiguard';
 
-const guard1 = function(to, from, next) {
+const guard1 = function(router,to, from, next) {
     setTimeout(function() {
         console.log('guard1 called');
         next();
     }, 1000);
 }
 
-const guard2 = function(to, from, next) {
+const guard2 = function(router,to, from, next) {
     setTimeout(function() {
         console.log('guard2 called');
         next();
