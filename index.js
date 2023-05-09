@@ -26,7 +26,7 @@ module.exports = function (router, guards) {
     throw new Error('You must specify an array of guards')
   }
 
-  return (router, to, from, next) => {
+  return (to, from, next) => {
     return evaluateGuards(router, guards, to, from, next)
   }
 }
