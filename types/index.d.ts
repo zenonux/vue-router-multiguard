@@ -1,18 +1,19 @@
 import type {
   Router,
   RouteLocationNormalized,
+  NavigationGuard,
   NavigationGuardNext,
 } from "vue-router";
-interface CustonGuard {
+interface CustomNavigationGuard {
   (
     router: Router,
     to: RouteLocationNormalized,
     from: RouteLocationNormalized,
     next: NavigationGuardNext
-  ): NavigationGuardNext | Promise<NavigationGuardNext>;
+  ): void | NavigationGuardNext | Promise<NavigationGuardNext>;
 }
 
 export default function Multiguard(
   router: Router,
-  guards: Array<CustonGuard>
-): CustonGuard;
+  guards: Array<CustomNavigationGuard>
+): NavigationGuard;
